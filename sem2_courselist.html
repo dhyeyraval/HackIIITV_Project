@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Semester Courses</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="semester">
+        <h1>Courses for Semester 2</h1>
+        <br>
+        <div class="course">
+            <span>Course 1:</span>
+            <select>
+                <option value="MA102">MA102:Mathematics-2(Discrete Mathematics)</option>
+            </select>
+        </div>
+        <div class="course">
+            <span>Course 2:</span>
+            <select>
+                <option value="PH110">PH110:Waves and Electromagnetics</option>
+            </select>
+        </div>
+        <div class="course">
+            <span>Course 3:</span>
+            <select>
+                <option value="PH170">PH170:Waves and Electromagnetics Lab</option>
+            </select>
+        </div>
+        <div class="course">
+            <span>Course 4:</span>
+            <select>
+                <option value="EE100">EE100:Basic Electrical Engineering</option>
+            </select>
+        </div>
+        <div class="course">
+            <span>Course 5:</span>
+            <select>
+                <option value="EE160">EE160:Basic Electrical Engineering Lab</option>
+            </select>
+        </div>
+        <div class="course">
+            <span>Course 6:</span>
+            <select>
+                <option value="CS102">CS102:Introduction to Data Structures</option>
+            </select>
+        </div>
+        <div class="course">
+            <span>Course 7:</span>
+            <select>
+                <option value="CS162">CS162:Introduction to Data Structures Lab</option>
+            </select>
+        </div>
+        <div class="course">
+            <span>Course 8:</span>
+            <select>
+                <option value="HS102">HS102:Science Technology and Society</option>
+            </select>
+        </div>
+        <label><input type="checkbox" id="terms" name="terms" value="terms" >I have read the rules and regulations for academic semester registration and compile to it.
+        </label>
+        <br>
+        <a href="rules.html">Rules&Regulation</a>
+        <br>
+        <br>
+        <button type="submit" id="submit" onclick="checkRequired()" onclick = "window.location.href='doc_upload.html'">Submit</button>
+        
+        <script>
+            function checkRequired() {
+                let isRequired = 
+                    document.getElementById("GFG").required;
+                document.getElementById("sudo").innerHTML = isRequired
+                    ? "Checkbox is required."
+                    : "Checkbox is not required.";
+            }
+        </script>
+    </div>
+
+</body>
+</html>

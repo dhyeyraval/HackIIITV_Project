@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #171717;
+  }
+  
+  header, main, footer {
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .hero {
+    text-align: center;
+    background-color: #f0f0f0; 
+    padding: 50px 0;
+    border-radius: 10px;
+  }
+  
+  .hero h1 {
+    font-size: 2em;
+    font-weight: bold;
+  }
+  
+  .login-form {
+    background-color: #fff; 
+    border: 1px solid #ccc;
+    padding: 30px;
+    padding-top: 10px;
+    border-radius: 10px;
+  }
+  
+  .login-form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .login-form input[type="text"],
+  .login-form input[type="password"] {
+    width:40%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .login-form button {
+    background-color: #4CAF50; 
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .login-form button:hover {
+    background-color: #46a049;
+  }
+  
+  .login-form a {
+    color: #007bff; 
+    text-decoration: none;
+    font-size: 0.8em;
+  }

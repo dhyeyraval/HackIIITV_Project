@@ -1,0 +1,51 @@
+body {
+    background-color: #171717; /* Light gray background color */
+    font-family: Arial, sans-serif; /* Set a fallback font */
+}
+
+.semester {
+    background-color: #fff; /* White background color for the semester container */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+    max-width: 600px; /* Limit the width of the semester container */
+    margin: 0 auto; /* Center the semester container horizontally */
+}
+
+.course {
+    margin-bottom: 10px; /* Add some space between each course */
+}
+
+.course span {
+    display: inline-block;
+    width: 120px; /* Fixed width for the course labels */
+}
+
+.course select {
+    width: calc(100% - 140px); /* Adjust the width of the select dropdown */
+}
+
+button {
+    display: block;
+    margin: 0 auto; /* Center the button horizontally */
+    padding: 12px 20px;
+    background-color: hsl(230, 100%, 54%); /* Green background color */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+footer{
+    text-align: center;
+    padding: 5px;
+    background-color: #4CAF50;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width:100%;
+}

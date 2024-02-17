@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Academic Registration Login</title>
+
+    <link rel="stylesheet" href="Login_page.css">
+    </head>
+<body>
+    <header>
+        </header>
+    <main>
+        <section class="hero">
+            <h1>Welcome to Academic Registration</h1>
+        </section>
+        <br>
+        <section class="login-form">
+            <h2>Login</h2>
+            <form action="/login" method="post">
+                <label for="rollno">Roll Number:</label>
+                <input type="text" id="rollno" name="rollno" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <br>
+                <button type="submit" id="submit" onclick = "window.location.href='sem2_courselist.html'">Log In</button>
+                <a href="/forgot-password.html" target="_main">Forgot Password?</a>
+            </form>
+        </section>
+        <script type="module">
+              // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+            import {getDatabase, ref, set, get, child} from "https://www.gstatic.com/firebasejs/10.8.0/firebase-database.js"
+
+
+  // Your web app's Firebase configuration
+            const firebaseConfig = {
+              apiKey: "AIzaSyDNMkCE5C8L9gt0UYrlmd7MknUGX_Yug1I",
+              authDomain: "academic-registration-bc795.firebaseapp.com",
+              projectId: "academic-registration-bc795",
+              storageBucket: "academic-registration-bc795.appspot.com",
+              messagingSenderId: "66510746174",
+              appId: "1:66510746174:web:bf54433aa8bebd1fe0d76f"
+            };
+
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+    
+            const db = getDatabase(app);
+            document.getElementById("submit").addEventListener('click', function(e){
+                e.preventDefault();
+              set(ref(db, 'user/' + document.getElementById("rollno").value),
+              {
+                  rollno : document.getElementById("rollno").value,
+                  password : document.getElementById("password").value
+              });
+              alert("Login Successful!");
+                    })
+        </script>
+        
+    </main>
+    <footer>
+        </footer>
+</body>
+</html>
